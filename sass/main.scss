@@ -4,6 +4,22 @@
     align-items: center;
 }
 
+@mixin button-style {
+    opacity: 1;
+    background: $color-primary;
+    color: white;
+    padding: 0 20px;
+    border-radius: 200px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);  
+}
+
+@mixin button-hover {
+    opacity: 0.7;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.6);    
+}
+
+
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
@@ -60,5 +76,11 @@ a {
     }
     &__text {
         text-align: center;
+    }
+    &__button {
+        @include button-style;
+        &:hover {
+            @include button-hover;
+        }
     }
 }
