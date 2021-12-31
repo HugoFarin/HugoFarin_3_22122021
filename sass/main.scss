@@ -24,6 +24,11 @@ $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 
+*
+{
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -128,6 +133,7 @@ a {
         padding: 3px 8px 3px 8px;
         border-radius: 500px;
         transform: translateX(-50%);
+        left: 0;
     }
     &__icon {
         color: #7E7E7E;
