@@ -231,10 +231,10 @@ a {
 .footer {
     width: 100%;
     background-color: #353535;
+    padding: 0 25px;
     @include flex-center;
     &__bloc {
         display: inline;
-        padding: 0 25px;
         padding-bottom: 20px;
         width: 100%;
         max-width: 1200px;
