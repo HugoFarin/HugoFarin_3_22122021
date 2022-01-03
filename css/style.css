@@ -76,7 +76,7 @@ a {
 }
 
 .functioning {
-  padding: 25px 0;
+  padding: 25px 20px;
   width: 100%;
   background: white;
   display: flex;
@@ -85,7 +85,7 @@ a {
   flex-direction: column;
 }
 .functioning__container {
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
   background-color: white;
   padding: 0;
@@ -175,6 +175,20 @@ a {
   transform: scale(1.02);
   cursor: pointer;
 }
+.restaurant__card-new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background: #99e2d0;
+  top: 20px;
+  right: 20px;
+}
+.restaurant__card-new p {
+  color: #1b6150;
+  padding: 10px 20px;
+  margin: 0;
+}
 .restaurant__block {
   background: white;
   display: flex;
@@ -194,6 +208,19 @@ a {
   align-items: center;
   margin-right: 20px;
   width: 30px;
+  cursor: pointer;
+}
+.restaurant__block .heart-empty {
+  width: 30px;
+  background: white;
+  position: absolute;
+}
+.restaurant__block .heart-empty:hover {
+  opacity: 0;
+}
+.restaurant__block .heart-full {
+  width: 30px;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 700px) {
