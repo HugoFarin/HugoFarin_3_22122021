@@ -134,7 +134,6 @@ a {
   margin: 0;
   background: #f6f6f6;
   padding: 20px;
-  max-width: 1200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -147,6 +146,7 @@ a {
   grid-template-rows: repeat(4, 1fr);
   grid-template-columns: 1fr;
   grid-gap: 20px;
+  width: 100%;
   padding: 20px;
 }
 .restaurant__card {
