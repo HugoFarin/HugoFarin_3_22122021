@@ -210,6 +210,7 @@ a {
             @include flex-center;
             margin-right: 20px;
             width: 30px;
+            font-size: 30px;
             cursor: pointer;
         }
         .heart-empty {
@@ -222,7 +223,8 @@ a {
         }
         .heart-full {
             width: 30px;
-            text-decoration: none;   
+            text-decoration: none;
+            color: #9356DC;
         }
         
     }

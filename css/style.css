@@ -207,6 +207,7 @@ a {
   align-items: center;
   margin-right: 20px;
   width: 30px;
+  font-size: 30px;
   cursor: pointer;
 }
 .restaurant__block .heart-empty {
@@ -220,6 +221,7 @@ a {
 .restaurant__block .heart-full {
   width: 30px;
   text-decoration: none;
+  color: #9356DC;
 }
 
 .footer {
