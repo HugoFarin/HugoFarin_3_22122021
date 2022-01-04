@@ -215,6 +215,7 @@ a {
 }
 .restaurant__block .heart-empty {
   width: 30px;
+  color: black;
   background: white;
   position: absolute;
 }
