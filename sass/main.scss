@@ -205,6 +205,9 @@ a {
         &-info {
             color: black;
             margin-left: 20px;
+            .restaurant-name {
+                margin: 0;
+            }
         }
         &-hearth {
             @include flex-center;

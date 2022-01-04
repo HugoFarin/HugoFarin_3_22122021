@@ -201,6 +201,9 @@ a {
   color: black;
   margin-left: 20px;
 }
+.restaurant__block-info .restaurant-name {
+  margin: 0;
+}
 .restaurant__block-hearth {
   display: flex;
   justify-content: center;
