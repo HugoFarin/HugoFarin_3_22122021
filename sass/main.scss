@@ -40,6 +40,13 @@ a {
     color: white;
 }
 
+.main {
+    margin: 0;
+    padding: 0;
+    @include flex-center;
+    flex-direction: column;
+}
+
 .header {
     box-shadow: 0px 5px 6px 0px rgba(0,0,0,0.20);
     position: relative;
@@ -90,7 +97,7 @@ a {
 }
 
 .functioning {
-    padding: 25px 20px;
+    padding: 25px;
     width: 100%;
     background: white;
     @include flex-center;
@@ -155,7 +162,8 @@ a {
         grid-template-rows: repeat(4,1fr) ;
         grid-template-columns: 1fr;
         grid-gap: 20px;
-        width: 100%;   
+        width: 100%;
+        max-width: 1200px;
     }
     &__card {
         position: relative;
@@ -285,5 +293,11 @@ a {
             grid-template-columns: 1fr 1fr;
             grid-gap: 20px;
         }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .restaurants {
+        align-items: center;
     }
 }
