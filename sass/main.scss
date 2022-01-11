@@ -34,6 +34,32 @@ body {
     margin: 0;
     background: #f6f6f6;
 }
+
+.spinner {
+    height: 100%;
+    background: white;
+    margin: auto;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 20;
+    animation: spinner 2s linear ;
+    visibility: hidden;
+    &__loading {
+        @include flex-center;
+        border: 10px solid transparent;
+        border-top: 10px solid $color-secondary;
+        border-bottom: 10px solid $color-secondary;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        animation: spinner-loading 2s linear ;
+        z-index: 10;
+        visibility: hidden;
+    }
+}
  
 a {
     text-decoration: none;
@@ -278,6 +304,35 @@ a {
         &__title {
             font-size: 15px;
         }
+    }
+}
+
+@keyframes spinner {
+    0% {
+        visibility: visible;
+        opacity: 0.9;
+    }
+    70% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes spinner-loading {
+    0% {
+        visibility: visible;
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(360deg);
+        opacity: 0;
+        visibility: hidden;
     }
 }
 
