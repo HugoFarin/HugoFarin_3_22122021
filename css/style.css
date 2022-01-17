@@ -316,10 +316,10 @@ a {
 @keyframes spinner {
   0% {
     visibility: visible;
-    opacity: 0.9;
+    opacity: 1;
   }
   70% {
-    opacity: 0.9;
+    opacity: 1;
   }
   100% {
     opacity: 0;
