@@ -147,6 +147,10 @@ main {
   border-radius: 15px;
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
 }
+.menu__grid__case .menu__case__price {
+  padding-left: 70px;
+  transition: 0.5s ease;
+}
 .menu__grid__case:hover .menu__case__price {
   padding-right: 70px;
   transition: 0.5s ease;
@@ -159,9 +163,11 @@ main {
   right: 0px;
   padding: 0 13px;
   height: 100%;
+  animation-name: slide-back 0.5s;
+  animation-direction: alternate;
 }
 .menu__grid__case .validation__box i {
-  font-size: 30px;
+  font-size: 25px;
   color: white;
   transform: rotate(180deg);
   animation: rotate 0.5s both;
@@ -170,7 +176,8 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: slide-left 0.5s ease;
+  position: absolute;
+  animation: slide-left 0.5s;
   transform-origin: right;
 }
 .menu__case__dish {
@@ -228,6 +235,14 @@ main {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes slide-back {
+  0% {
+    transform: scale(-50px);
+  }
+  100% {
+    transform: scale(0);
   }
 }
 @keyframes slide-left {

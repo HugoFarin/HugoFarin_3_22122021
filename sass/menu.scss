@@ -163,9 +163,13 @@ main{
             background-color: white ;
             border-radius: 15px;
             box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.1);
+            .menu__case__price {
+                padding-left: 70px;
+                transition: 0.5s ease;
+            }
             &:hover .menu__case__price {
                 padding-right: 70px;
-                transition: 0.5s ease ;
+                transition: 0.5s ease;
             }
             .validation__box {
                 display: none;
@@ -175,8 +179,10 @@ main{
                 right: 0px;
                 padding: 0 13px;
                 height: 100%;
+                animation-name: slide-back 0.5s;
+                animation-direction: alternate;
                 i {
-                    font-size: 30px;
+                    font-size: 25px;
                     color: white;
                     transform: rotate(180deg);
                     animation: rotate 0.5s both;
@@ -184,7 +190,8 @@ main{
             }
             &:hover .validation__box {
                 @include flex-center;
-                animation: slide-left 0.5s ease ;
+                position: absolute;
+                animation: slide-left 0.5s;
                 transform-origin: right;
             }
         }
@@ -237,6 +244,15 @@ main{
 }
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes slide-back {
+    0% {
+        transform: scale(-50px);
+    }
+    100% {
+        transform: scale(0);
     }
 }
 
