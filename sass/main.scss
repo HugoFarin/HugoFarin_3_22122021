@@ -263,7 +263,7 @@ a {
         .heart-full {
             width: 30px;
             text-decoration: none;
-            color: #9356DC;
+            color: $color-primary;
         }
         
     }
@@ -313,7 +313,7 @@ a {
         visibility: visible;
         opacity: 1;
     }
-    70% {
+    50% {
         opacity: 1;
     }
     100% {
@@ -327,7 +327,7 @@ a {
         visibility: visible;
         opacity: 1;
     }
-    70% {
+    50% {
         opacity: 1;
     }
     100% {

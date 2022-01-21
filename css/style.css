@@ -319,7 +319,7 @@ a {
     visibility: visible;
     opacity: 1;
   }
-  70% {
+  50% {
     opacity: 1;
   }
   100% {
@@ -332,7 +332,7 @@ a {
     visibility: visible;
     opacity: 1;
   }
-  70% {
+  50% {
     opacity: 1;
   }
   100% {
