@@ -109,7 +109,9 @@ main {
 .menu__header__heart .heart-full {
   width: 30px;
   text-decoration: none;
-  color: #9356DC;
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(180deg, #ff79d7 0%, #9556dc 100%);
 }
 .menu__grid {
   display: grid;
@@ -206,7 +208,7 @@ main {
 }
 .menu__button {
   opacity: 1;
-  background: #9356DC;
+  background: linear-gradient(180deg, #ff79d7 0%, #9556dc 100%);
   color: white;
   padding: 0 20px;
   border-radius: 200px;
