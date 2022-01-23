@@ -6,7 +6,7 @@
 
 @mixin button-style {
     opacity: 1;
-    background: $color-primary;
+    background-image: $color-gradient;
     color: white;
     padding: 0 20px;
     border-radius: 200px;
@@ -23,6 +23,8 @@
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
+$color-gradient: linear-gradient(180deg, rgb(255, 121, 215) 0%, rgb(149, 86, 220) 100%);
+
 
 *
 {
@@ -152,6 +154,9 @@ a {
         box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.16);
         &:hover {
             @include button-hover;
+            .fas {
+                color: $color-primary;
+            }
         }
     }
     &__steps {
@@ -258,12 +263,15 @@ a {
             position: absolute;
             &:hover {
               opacity: 0;
+              transition: 0.5s
             }
         }
         .heart-full {
             width: 30px;
             text-decoration: none;
-            color: $color-primary;
+            color: transparent;
+            background-clip: text;
+            background-image: $color-gradient;        ;
         }
         
     }
