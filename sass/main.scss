@@ -154,7 +154,14 @@ a {
         box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.16);
         &:hover {
             @include button-hover;
-            .fas {
+            background-color: #d19fcda2;
+            .fa-mobile-alt {
+                color: $color-primary;
+            }
+            .fa-list-ul {
+                color: $color-primary;
+            }
+            .fa-store {
                 color: $color-primary;
             }
         }
@@ -271,6 +278,7 @@ a {
             text-decoration: none;
             color: transparent;
             background-clip: text;
+            -webkit-background-clip: text;
             background-image: $color-gradient;
         }
         
