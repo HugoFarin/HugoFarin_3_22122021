@@ -155,6 +155,7 @@ a {
         &:hover {
             @include button-hover;
             background-color: #d19fcda2;
+            -webkit-background-color: #d19fcda2;
             .fa-mobile-alt {
                 color: $color-primary;
             }
